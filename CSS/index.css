@@ -96,9 +96,10 @@ a {
     object-fit: contain;
 }
 
+/* offcanvas */
 .offcanvas {
-    /* display: none !important; */
-    background-color: #000 !important;
+    display: none;
+    background: #000 !important;
 }
 
 .offcanvas-body a {
@@ -109,7 +110,9 @@ a {
     display: block;
 
 }
-
+.offcanvas-header button::before {
+  display: none;
+}
 .offcanvas-header button {
     background: url(../Assets/x-white.jpg) no-repeat center / contain;
     height: 25px;
@@ -117,13 +120,18 @@ a {
     margin-left: auto;
 }
 
-.modal-backdrop {
+.offcanvas-body button {
+    width: 100%;
+}
+
+
+/* .modal-backdrop {
     display: none;
 }
 
 #mobileMenu {
     display: none;
-}
+} */
 
 /* Banner-section */
 .banner-section {
@@ -501,8 +509,8 @@ a {
 }
 
 @media screen and (max-width:992px) {
-    #mobileMenu{
-        display: block !important;
+    .offcanvas {
+        display: block;
     }
 
     .title2 {
