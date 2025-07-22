@@ -120,7 +120,8 @@ a {
 .modal-backdrop {
     display: none;
 }
-#mobileMenu{
+
+#mobileMenu {
     display: none;
 }
 
@@ -450,9 +451,11 @@ a {
     background-color: #8a737d;
     border-radius: 6px;
 }
-.s-content .title2{
+
+.s-content .title2 {
     color: #ffffff !important;
 }
+
 .s-img {
     max-width: 103px;
     object-fit: contain;
@@ -491,19 +494,21 @@ a {
         font-size: 24px;
         margin-bottom: 25px !important;
     }
-    #email{
-        padding:10px 2px;
+
+    #email {
+        padding: 10px 2px;
     }
 }
 
 @media screen and (max-width:992px) {
     .offcanvas {
-        /* display: block !important; */
+        display: block !important;
     }
-.title2{
-    font-size: 40px;
-}
-    
+
+    .title2 {
+        font-size: 40px;
+    }
+
     .navbar-brand {
         left: 0;
     }
@@ -552,7 +557,8 @@ a {
     .title1 {
         font-size: 40px;
     }
-    .title2{
+
+    .title2 {
         font-size: 36px !important;
     }
 
@@ -578,10 +584,12 @@ a {
     .title1 {
         font-size: 24px;
     }
-    .title2{
+
+    .title2 {
         font-size: 22px !important;
         text-align: center;
     }
+
     .banner-section .para {
         font-size: 12px;
         margin-block: 15px;
@@ -662,14 +670,17 @@ a {
     .foot-logo {
         margin: 0 auto 20px;
     }
-    .s-content{
+
+    .s-content {
         flex-direction: column;
     }
-    .s-res{
+
+    .s-res {
         justify-content: center;
         margin-top: 10px;
     }
-    .s-btns{
+
+    .s-btns {
         padding: 8px 12px;
         text-align: center;
     }
