@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Section</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #fff5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-section {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.small-heading {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+    color: #3e3e3e;
+}
+
+.testimonial-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-content {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #f28ab2;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.name {
+    font-weight: bold;
+    color: #8b4d6c;
+}
+
+.designation {
+    font-size: 14px;
+    color: #999;
+}
+
+.nav-button {
+    background: #c94d91;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #a83d77;
+}
+
+.left {
+    position: absolute;
+    left: -40px;
+}
+
+.right {
+    position: absolute;
+    right: -40px;
+}
+
+</style>
+</head>
+<body>
+
+<section class="testimonial-section">
+    <p class="small-heading">Testimonials</p>
+    <h2 class="main-heading">What people say about Us</h2>
+
+    <div class="testimonial-slider">
+        <button class="nav-button left" onclick="prevTestimonial()">&#10094;</button>
+
+        <div class="testimonial-content">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rita Brown" class="profile-img" id="profileImage">
+            <p class="testimonial-text" id="testimonialText">
+                I was planning on doing a DIY project at home since I had more time nowadays and didn’t want people visiting my home for health concerns. C-Line experts ordered the materials, walked me step by step on what to do. Whenever I got stuck, I just did the Quick call and an expert helped me solve that issue in minutes! I saved $2400 on my project and learned a new skill!
+            </p>
+            <p class="name" id="testimonialName">Rita Brown</p>
+            <p class="designation" id="testimonialDesignation">VP Marketing at Bowl</p>
+        </div>
+
+        <button class="nav-button right" onclick="nextTestimonial()">&#10095;</button>
+    </div>
+</section>
+
+
+</body>
+</html>
